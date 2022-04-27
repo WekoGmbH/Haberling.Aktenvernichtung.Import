@@ -67,7 +67,7 @@ namespace Haberling.Importer
 
         }
 
-        private void ImportVorgaenge(Mandant mandant)
+        static void ImportVorgaenge(Mandant mandant)
         {
 
             var importfile = System.Configuration.ConfigurationManager.AppSettings["importfile"];
@@ -113,8 +113,8 @@ namespace Haberling.Importer
         static void Main(string[] args)
         {
             var mandant = CreateMandant();
-            //ImportVorgaenge();
-            ImportSerials(mandant);
+            ImportVorgaenge(mandant);
+            //ImportSerials(mandant);
             Console.WriteLine("Zum Beenden bitte Taste drücken.");
             Console.ReadLine();
         }

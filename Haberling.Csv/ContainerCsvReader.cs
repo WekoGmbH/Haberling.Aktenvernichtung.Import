@@ -54,7 +54,7 @@ namespace Haberling.Csv
                     record.Ct2 = csv.GetField<string>(6);
                     record.Typ = csv.GetField<string>(5);
                     record.Container = string.Concat("Typ ", csv.GetField(8).Split('/')[1].Trim());
-                    record.Seriennummer = csv.GetField(8).Split('/')[0].Replace("Cont: ", "").Trim();
+                    record.Seriennummer = csv.GetField(8).Replace("/","-").Replace("Cont: ", "").Trim();
                     record.Strasse = csv.GetField<string>(9);
                     record.Erfassungsnummer = Convert.ToInt32(csv.GetField<string>(4));
                     result.Add(record);

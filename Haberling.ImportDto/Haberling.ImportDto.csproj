@@ -47,6 +47,7 @@
     <Compile Include="Lagerbuchung.cs" />
     <Compile Include="SecLogin.cs" />
     <Compile Include="SerialNumberCsvDto.cs" />
+    <Compile Include="SerialsForLagerbuchung.cs" />
     <Compile Include="Seriennummer.cs" />
     <Compile Include="Vorgang.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
